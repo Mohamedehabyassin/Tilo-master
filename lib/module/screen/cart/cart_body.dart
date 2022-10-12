@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tilo/shared/provider/cart_provider.dart';
 
-class Body extends StatefulWidget {
+class CartBody extends StatefulWidget {
   @override
-  _BodyState createState() => _BodyState();
+  _CartBodyState createState() => _CartBodyState();
 }
 
-class _BodyState extends State<Body> {
+class _CartBodyState extends State<CartBody> {
   @override
   Widget build(BuildContext context) {
     final itemProvider = Provider.of<CartProvider>(context);

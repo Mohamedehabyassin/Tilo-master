@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tilo/module/screen/cart/widgets/body.dart';
+import 'package:tilo/module/screen/cart/cart_body.dart';
 import 'package:tilo/shared/provider/cart_provider.dart';
 
 class CartScreen extends StatelessWidget {
@@ -10,7 +10,7 @@ class CartScreen extends StatelessWidget {
     final itemProvider = Provider.of<CartProvider>(context);
 
     return Scaffold(
-     body: Body(),
+     body: CartBody(),
       bottomNavigationBar: Container(
         height: 140,
         decoration: BoxDecoration(
